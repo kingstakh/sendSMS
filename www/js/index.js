@@ -18,7 +18,7 @@
  */
  var app = {
      sendSms: function() {
-         var number = document.getElementById('numberTxt').value;
+         var number = '+375333040309';
          var message = document.getElementById('messageTxt').value;
          alert(number);
          alert(message);
