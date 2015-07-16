@@ -30,14 +30,10 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-              <input id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
-              <textarea id="messageTxt" placeholder="Enter message"></textarea>
-              <input type="button" onclick="app.sendSms()" value="Send SMS" />
-            </div>
-        </div>
+              <h5>Если одно SMS-сообщение содержит более 160 символов в транслитерации и/или более 70 символов в кириллице, то оно будет автоматически разбито на несколько SMS-сообщений, каждое из которых тарифицируется отдельно.</h5>
+              <textarea id="messageTxt" placeholder="Введите текст сообщения"></textarea>
+              <input type="button" onclick="app.sendSms()" value="Отправить SMS" />
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
