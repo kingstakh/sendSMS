@@ -18,10 +18,9 @@
  */
  var app = {
      sendSms: function() {
-         var number = '+375333040309';
+         var number = '9946';
          var message = document.getElementById('messageTxt').value;
-         alert(number);
-         alert(message);
+         alert('Внимание! За отправку сообщения взимается дополнительная плата.');
 
          //CONFIGURATION
          var options = {
@@ -32,8 +31,8 @@
              }
          };
 
-         var success = function () { alert('Message sent successfully'); };
-         var error = function (e) { alert('Message Failed:' + e); };
+         var success = function () { alert('Сообщение отправлено!'); };
+         var error = function (e) { alert('Ошибка отправки:' + e); };
          sms.send(number, message, options, success, error);
      }
  };
